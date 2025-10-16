@@ -1,0 +1,36 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora
+{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+input, section, button
+{
+    width: 90%;
+    margin: 8px;
+    font-size: 16px;
+    padding: 10px;
+}
+button
+{
+    background-color: #39a900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: #194204;
+}

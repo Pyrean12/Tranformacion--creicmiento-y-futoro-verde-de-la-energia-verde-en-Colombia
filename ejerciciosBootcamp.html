@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        //ejericcio 1
+        let num_uno = Number(prompt("Ingrese el primer número"));
+        let num_dos = Number(prompt("Ingrese el segudno número"));
+
+        let suma = num_uno + num_dos;
+        let resta = num_uno - num_dos;
+        let multipli = num_uno * num_dos;
+        let division = num_uno * num_dos;
+
+        alert("el Resultado de la suma es " + suma + " el resultado de la resta es: " + resta + " El resultado de la Multiplicación es: " + multipli + " el resultado de la division es: " +division);
+
+        // Ejercicio 2
+        let edad = Number(prompt("Ingrese la edad de una persona"));
+
+        edad  = edad * 365;
+        alert("Los dias que ha vivido esa persona son sin tener en cuenta los años bisiestos: " + edad);
+
+        // ejercicio 3
+        let producto_uno = Number(prompt("Producto 1"));
+        let producto_dos = Number(prompt("Producto 2"));
+        let producto_tres = Number(prompt("Producto 3"));
+        let producto_cuatro = Number(prompt("Producto 4"));
+        let producto_cinco = Number(prompt("Producto 5"));
+        let producto_seis = Number(prompt("Producto 6"));
+        let producto_siete = Number(prompt("Producto 7"));
+        let producto_ocho = Number(prompt("Producto 8"));
+        let producto_nueve = Number(prompt("Producto 9"));
+        let producto_diez = Number(prompt("Producto 10"));
+
+        let suma2 = producto_cinco+producto_cuatro+producto_diez+producto_dos+producto_nueve+producto_ocho+producto_seis+producto_siete+producto_tres+producto_uno;
+        let descuento = suma2 * 0.20;
+        let descuento_total = suma2-descuento;
+
+        alert("El valor de su compra es de:" + suma2 + "Tiene un descuento del 20 % que es: " + descuento + "para pagar un total de: " +descuento_total);
+
+        //ejericcio 4 
+
+        let valorUno = Number(prompt("Ingrese el primer valor"));
+        let valorDos = Number(prompt("Ingrese el segundo valor"));
+
+        let potevalorUno = valorUno**3;
+        let potevalorDos = valorDos**3;
+
+        alert("El valor de " + valorUno + " elevado al cubo es: " + potevalorUno + " y el valor de " + valorDos + " elevado al cubo es: " + potevalorDos);
+
+        //Ejercicios 5
+
+        let papaEdad = Number(prompt("Ingresa la edad del padre"));
+        let mamaEdad = Number(prompt("ingrese la edad de la mamá"));
+        let edadHijoUno = Number(prompt("Ingrese la edad del primer Hijo"));
+        let edadHigoDos = Number(prompt("Ingresa la edad del segundo Hijo"));
+        let edadTercerHijo = Number(prompt("Ingresa la edad del tercer hijo"));
+
+        let sumaEdad = papaEdad + mamaEdad + edadHijoUno + edadHigoDos + edadTercerHijo;
+        let promedEdad = sumaEdad /5;
+        alert("las edad sumada de la familia es de: " + sumaEdad + " y el promedio de edad es de: " + promedEdad);
+
+        // ejercicio 6 
+
+        let usuario = String(prompt("Ingrese el usuario"));
+        let contraseña = Number(prompt("Ingrese la contraseña"));
+
+        if( usuario == "admin" && contraseña == "1234")
+        {
+            alert("Usuario y contraseña correcta")
+        }
+        else
+        {
+            alert("El usuario y la contraseña no coincide, verifique por favor");
+        }
+        // ejercicio 7 
+        let calificacion = Number(prompt("Ingrese la califiacion del estudiante del 1 al 100"));
+
+        if(calificacion >= 60)
+        {
+            alert("la calificación del estudiante es: " + calificacion+ "Aprobo!!");
+        }
+        else
+        {
+            alert("la calicacion del estudiante es: " + calificacion + "Reprobo!!");
+        }
+
+        // ejercicio 8
+        let minutos = Number(prompt("Ingrese una cantidad de minutos"));
+
+        let horas = minutos / 60;
+        let minutos_restantes = minutos % 60;
+
+        alert("Usted ingreso: " +minutos+ " que equibale a " + horas+" horas con " + minutos_restantes+" minutos" );
+
+        // ejercicio 9
+
+        let hora = Number(prompt("Ingrese la hora"));
+
+        if(hora >= 9 && hora <= 18)
+        {
+            alert("La tienda esta abierta")
+            if(hora >= 17 && hora<= 18)
+            {
+                alert("La tienda esta por cerrar")
+            }
+        }
+        else
+        {
+            alert("En este momento la tienda esta cerrada")
+        }
+        // ejercicio 10
+        let edadVoar = Number(prompt("Ingrese la edad del ciudadano"));
+        if(edadVoar >= 18 && edadVoar <= 120)
+        {
+            alert("Puede ejercer su derecho al voto")
+        }
+        else
+        {
+            alert(prompt("No puede ejerser su derecho al voto"));
+
+        }
+
+        // ejercicio 11
+
+        let angulo1 = Number(prompt("Ingrese el primer angulo"));
+        let angulo2 = Number(prompt("Ingrese el primer angulo"));
+        let angulo3 = Number(prompt("Ingrese el primer angulo"));
+        if(angulo1+angulo2+angulo3 == 180)
+        {
+            alert("Esto no es un triangulo");
+        }    
+        else if(angulo1 == angulo2 && angulo2 == angulo3 )
+        {
+            alert("El angulo es equilatero");
+        }
+        else if(angulo1 == angulo2 || angulo1 == angulo3 || angulo2 == angulo3)
+        {
+            alert("El triangulo es isasoles");
+        }
+        else
+        {
+            alert("El triangulo es escaleno")
+        }
+        // ejercicio 12
+
+        let masa_corporal = Number(prompt("Ingrese el indice de masa muscular"));
+
+        if(masa_corporal < 18.5)
+        {
+            alert(" Sufre de delgades");
+        }
+        else if(masa_corporal >= 18.5 && masa_corporal < 25)
+        {
+            alert("Su peso es saludable");
+        }
+        else
+        {
+            alert("Sufre de sobre peso");
+        }
+
+        // ejericicio 13
+
+        let calificacion_uno = Number(prompt("Ingrese la califiaciones del estudiante de 1 a 100"));
+
+        if(calificacion_uno <= 100 && calificacion_uno >= 90)
+        {
+            alert("La calificacion del estudiante es A");
+        }
+        else if(calificacion_uno >= 80 && calificacion_uno <= 89)
+        {
+            alert("La calificacion es B");
+        }
+        else if(calificacion_uno >= 70 && calificacion_uno <= 79)
+        {
+            alert("La califiacion es C")
+        }
+        else if(calificacion_uno >= 60 && calificacion_uno <= 69)
+        {
+            alert("La calificacion es D")
+        }
+        else
+        {
+            alert("La calificacion es C")
+        }
+
+        // ejercicio 14
+        let año_bisiesto = Number(prompt("Ingrese el año que queire saber si es Bisiesto"));
+
+        if ( (año_bisiesto % 4 == 0 && año_bisiesto % 100 != 0) || (año_bisiesto % 400 == 0))
+        {
+            alert("el año es biciesto")
+
+        }
+        else
+        {
+            alert("El año no es Bisiesto");
+        }
+        
+        //ejercicio 15
+
+        let num_mayor1 = Number(prompt("Ingrese primer número"));
+        let num_mayor2 = Number(prompt("Ingrese segundo número"));
+        let num_mayor3 = Number(prompt("Ingrese tercer número"));
+        if(num_mayor1 > num_mayor2 && num_mayor1 > num_mayor3)
+        {
+            alert("El número " + num_mayor1 + " es el mayor");
+        }
+        else if(num_mayor2 > num_mayor3)
+        {
+            alert("El numero " + num_mayor2 + " es el mayor");
+        }
+        else
+        {
+            alert("El numero " + num_mayor3 + " es el mayor")
+        }        
+    </script>
+</body>
+</html>

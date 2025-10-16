@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mapa interactivo de Colombia</title>
+<style>
+  :root{
+    --fill:#c7e9c0;        /* color base regiones */
+    --fill-hover:#2ecc71;  /* color al pasar el cursor */
+    --stroke:#ffffff88;
+    --focus:#f1c40f;
+  }
+
+  body{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    margin:0;
+    background:linear-gradient(180deg, #f6fbf8, #ecf8f2);
+    color:#0b3a2e;
+  }
+
+  .map-wrapper{
+    width:95%;
+    max-width:900px;
+    background: white;
+    border-radius:12px;
+    box-shadow: 0 8px 30px rgba(10,30,20,0.08);
+    padding:18px;
+  }
+
+  .map-title{
+    text-align:center;
+    margin:6px 0 12px;
+  }
+
+  /* SVG responsive */
+  .colombia-svg{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /* estilos para regiones (paths) */
+  .region{
+    fill: var(--fill);
+    stroke: var(--stroke);
+    stroke-width:1;
+    transition: fill 180ms ease, transform 120ms ease, filter 180ms ease;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* efecto hover */
+  .region:hover,
+  .region.focused{
+    fill: var(--fill-hover);
+    filter: drop-shadow(0 6px 14px rgba(46,204,113,0.22));
+    transform: translateY(-2px);
+  }
+
+  /* para accesibilidad: foco por teclado */
+  .region:focus{
+    box-shadow: 0 0 0 4px rgba(241,196,15,0.18);
+    stroke: var(--focus);
+    stroke-width:2;
+  }
+
+  /* leyenda simple */
+  .legend{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    margin-top:12px;
+    font-size:14px;
+  }
+  .legend .item{
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+  .dot{
+    width:14px;height:14px;border-radius:3px;background:var(--fill-hover);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* texto sobre el mapa */
+  .region-label{
+    pointer-events:none;
+    font-size:11px;
+    fill:#09331f;
+    font-weight:600;
+    text-anchor:middle;
+  }
+
+  @media (max-width:480px){
+    .map-wrapper{ padding:12px; border-radius:8px; }
+  }
+</style>
+</head>
+<body>
+  <div class="map-wrapper" role="region" aria-label="Mapa interactivo de Colombia">
+    <h2 class="map-title">Mapa interactivo de Colombia — pasa el cursor y haz clic</h2>
+
+    <!-- SVG simplificado por macro-regiones.
+         Notas:
+         - Cada <path> tiene id y data-url para la redirección.
+         - Reemplaza data-url con la página de destino que quieras.
+         - Puedes cambiar los títulos, colores, y añadir más regiones.
+    -->
+    <svg class="colombia-svg" viewBox="0 0 1000 900" xmlns="http://www.w3.org/2000/svg" aria-labelledby="mapTitle" role="img">
+      <title id="mapTitle">Mapa interactivo de Colombia por macro-regiones</title>
+
+      <!-- Fondo (opcional) -->
+      <rect x="0" y="0" width="1000" height="900" fill="transparent"></rect>
+
+      <!-- NORTE - Región Caribe (simplificada) -->
+      <path id="region-caribe" class="region" tabindex="0"
+            data-name="Caribe"
+            data-url="https://ejemplo.com/caribe"
+            d="M120 160 C140 120 220 80 300 90 C360 96 420 140 500 150 C580 160 660 150 720 170
+               C760 185 780 220 790 260 C810 320 790 360 760 390 C720 420 660 420 620 400
+               C560 370 480 360 420 370 C360 380 280 360 220 320 C170 290 140 230 120 160 Z"
+      />
+      <text x="410" y="230" class="region-label">Caribe</text>
+
+      <!-- ANDINA (macro) -->
+      <path id="region-andina" class="region" tabindex="0"
+            data-name="Andina"
+            data-url="https://ejemplo.com/andina"
+            d="M320 260 C360 230 420 210 480 220 C520 226 560 250 600 270 C640 290 690 320 730 360
+               C760 390 770 440 760 490 C740 560 700 600 650 630 C590 665 520 680 460 670 C400 660 340 640 300 600
+               C260 560 240 510 230 470 C220 430 250 390 300 360 C320 345 310 290 320 260 Z"
+      />
+      <text x="520" y="420" class="region-label">Andina</text>
+
+      <!-- PACÍFICO -->
+      <path id="region-pacifico" class="region" tabindex="0"
+            data-name="Pacífico"
+            data-url="https://ejemplo.com/pacifico"
+            d="M70 380 C120 360 180 360 220 380 C260 400 300 440 320 480 C330 500 320 540 300 560
+               C260 600 200 640 160 660 C120 680 80 680 60 640 C40 600 40 520 70 380 Z"
+      />
+      <text x="200" y="520" class="region-label">Pacífico</text>
+
+      <!-- ORINOQUÍA -->
+      <path id="region-orinoquia" class="region" tabindex="0"
+            data-name="Orinoquía"
+            data-url="https://ejemplo.com/orinoquia"
+            d="M760 420 C820 400 880 380 920 360 C940 350 960 360 970 380 C985 410 980 460 960 500
+               C940 540 900 560 860 580 C820 600 780 610 740 600 C700 590 710 540 720 500 C730 460 745 440 760 420 Z"
+      />
+      <text x="860" y="500" class="region-label">Orinoquía</text>
+
+      <!-- AMAZONAS -->
+      <path id="region-amazonia" class="region" tabindex="0"
+            data-name="Amazonas"
+            data-url="https://ejemplo.com/amazonia"
+            d="M520 700 C560 680 610 680 650 700 C690 720 720 760 740 800 C755 830 740 860 700 870
+               C640 885 560 880 510 860 C470 845 450 800 470 760 C490 720 510 710 520 700 Z"
+      />
+      <text x="610" y="790" class="region-label">Amazonas</text>
+
+      <!-- (opcional) fronteras internas o contorno general -->
+      <path d="M100 150 L900 150 L920 200 L920 820 L500 880 L120 760 Z" fill="none" stroke="#00000010" />
+    </svg>
+
+    <div class="legend" aria-hidden="true">
+      <div class="item"><div class="dot"></div><div>Haz hover y clic en una región</div></div>
+    </div>
+  </div>
+
+<script>
+  // --- comportamiento: hover, click y accesibilidad ---
+  (function(){
+    const regions = document.querySelectorAll('.region');
+
+    // Click -> redirigir a data-url
+    regions.forEach(r => {
+      r.addEventListener('click', (e) => {
+        const url = r.getAttribute('data-url') || '#';
+        // Abre en la misma pestaña; si prefieres nueva pestaña: window.open(url,'_blank')
+        if (url && url !== '#') {
+          window.location.href = url;
+        }
+      });
+
+      // keyboard support: Enter o Space activa el click
+      r.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          r.click();
+        }
+        // foco visual extra para teclas de navegación
+        r.classList.add('focused');
+      });
+
+      r.addEventListener('focus', () => r.classList.add('focused'));
+      r.addEventListener('blur', () => r.classList.remove('focused'));
+
+      // tooltip accesible con title (opcional)
+      const name = r.getAttribute('data-name');
+      if (name) r.setAttribute('title', name + ' — hacer clic para ver más');
+
+      // on mouseover: add aria-live message (opcional)
+      r.addEventListener('mouseenter', () => {
+        // small visible effect already via CSS
+      });
+    });
+
+    // Mejorar accesibilidad: permitir anuncio por voz (si se requiere)
+    // Aquí podrías agregar un live-region si necesitas anunciar la región enfocada.
+  })();
+</script>
+</body>
+</html>
