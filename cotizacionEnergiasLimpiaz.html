@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotiza aqui</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Cotizacion
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section>
+        <div class="contaienr">
+                <input type="text" id="nombreClie" name="Nombre" placeholder="Nombre">
+                <input type="text" id="apellidoClie" name="Apellido" placeholder="Apellido">
+                <input type="number" id="telefono" name="Telefono" placeholder="Teléfono">
+                <input type="email" id="correoClie" name="Correo " placeholder="Email">
+                <input type="text" id="ciudadVenta" placeholder="ciudad">
+            </section>
+            <hr>
+            <section>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Paneles solares</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Energia Eolica</button>
+                <!---  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Cerrar Elementos</button>-->
+                </p>
+            </section>
+            <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <h3>Paneles solares</h3>
+                        <label>Tipo de panel</label>
+                        <select class="form-select" aria-label="Default select example" id="selector">
+                            <option selected >Escoja opcion de paneles</option>
+                            <option value="1">Kit Solar On grid 6000W</option>
+                            <option value="2">Kit Solar Fotovoltaico </option>
+                            <option value="3">Panel Solar para casa trifasico </option>
+                        </select>
+                        <label>Cantidad</label>
+                        <input type="number" id="cantidadPanels" placeholder="Ingrese cantidad">
+                        <label>Precio unitario</label>
+                        <input type="text" id="precioUnidad" placeholder="">
+                        <h3>Valor Paneles: <span id="resulPanel">--</span></h3>
+                        <button onclick="calularValor()">Calcular</button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="cotizacionEnergiasLimpiaz.js"></script>
+</body>
+</html>
