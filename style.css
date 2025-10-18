@@ -1,0 +1,344 @@
+:root {
+  --verde-principal: #0d922e;
+  --verde-claro: #b4dfb0;
+  --azul-suave: #c8e4f7;
+  --gris-fondo: #f4f8f4;
+  --texto-oscuro: #1e3932;
+}
+
+/* ======== ESTILO GENERAL ======== */
+body {
+  background-color: var(--gris-fondo);
+  color: var(--texto-oscuro);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--verde-claro);
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+/* ======== NAVBAR ======== */
+.bg-verde {
+  background-color: var(--verde-principal) !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--verde-claro) !important;
+  text-decoration: underline;
+}
+
+/* ======== ENCABEZADO ======== */
+header h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--verde-principal);
+  margin: 30px auto;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+/* ======== CARRUSEL ======== */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel img {
+  border-radius: 20px;
+}
+
+/* ======== PÁRRAFO PRINCIPAL ======== */
+main p {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 20px;
+  background-color: #ffffffc2;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ======== CARDS ======== */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-title {
+  color: var(--verde-principal);
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--verde-principal);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b7a27;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: var(--verde-principal) !important;
+  color: white;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+footer h3, footer h4 {
+  color: var(--azul-suave);
+}
+
+footer p {
+  font-size: 0.95rem;
+}
+
+.iconos a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.iconos a:hover {
+  color: var(--azul-suave);
+}
+h1
+{
+  align-items: center;
+  text-align: center;
+}
+main
+{
+  justify-content: center;
+  align-items: center;
+}
+h4{
+    
+    margin-top: auto;   
+    margin-bottom: 39PX; 
+    font-size: 40px;
+    text-shadow: 4px 4px 4px gray, 0 0 20px rgb(101, 206, 206);
+    display: inline-block;
+    animation: mover 2s infinite;
+    
+
+}
+@keyframes mover {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+.icono{
+    margin-top: 15px;
+}
+.bg-verde {
+  background-color: #0d922e !important; 
+}
+
+.container
+{
+  border: 6px;
+  border-radius: 6px;
+}
+input
+{
+  border-radius: 8px;
+  gap: 3px
+}
+
+/* === ESTILOS GENERALES === */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f8f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* === NAVBAR === */
+.bg-verde {
+  background-color: #1b5e20 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand img {
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+/* === HEADER === */
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header h1 {
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+/* === FORMULARIO DE DATOS CLIENTE === */
+.container input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #c8e6c9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.container input:focus {
+  outline: none;
+  border-color: #1b5e20;
+  box-shadow: 0 0 8px rgba(27, 94, 32, 0.3);
+}
+
+/* === BOTONES DE COLAPSE === */
+.btn-primary {
+  background-color: #388e3c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+/* === TARJETAS DE CONTENIDO === */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card-body h3 {
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+.card-body label {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.card-body input,
+.card-body select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #a5d6a7;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card-body input:focus,
+.card-body select:focus {
+  border-color: #388e3c;
+  box-shadow: 0 0 6px rgba(56, 142, 60, 0.4);
+}
+
+.card-body button {
+  background-color: #1b5e20;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-body button:hover {
+  background-color: #2e7d32;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1b5e20;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 3rem;
+}
+
+footer h3,
+footer h4 {
+  color: #c8e6c9;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 0.95rem;
+  color: #e8f5e9;
+}
+
+footer .iconos a {
+  color: #c8e6c9;
+  font-size: 1.5rem;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+footer .iconos a:hover {
+  color: #81c784;
+  transform: scale(1.1);
+}
+/* === ANIMACIÓN DE TÍTULO CONTACTENOS === */
+.movimiento {
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-5px); }
+}
