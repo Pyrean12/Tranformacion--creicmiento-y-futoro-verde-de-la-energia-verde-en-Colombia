@@ -343,22 +343,22 @@ footer .iconos a:hover {
   to { transform: translateY(-5px); }
 }
  main {
-            text-align: center;
-            margin: 40px auto;
-            max-width: 900px;
-        }
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+}
 
-        main img {
-            display: block;
-            margin: 0 auto 25px auto;
-            width: 90%;
-            max-width: 700px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+main img {
+display: block;
+margin: 0 auto 25px auto;
+width: 90%;
+max-width: 700px;
+border-radius: 15px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        main img:hover {
-            transform: scale(1.03);
-            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
-        }
+main img:hover {
+transform: scale(1.03);
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
