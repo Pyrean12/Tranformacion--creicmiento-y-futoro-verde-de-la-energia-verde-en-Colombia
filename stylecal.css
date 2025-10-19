@@ -1,0 +1,141 @@
+    :root {
+    --verde-principal: #2e7d32;
+    --verde-claro: #81c784;
+    --texto-claro: #f1f8e9;
+    --fondo-transparente: rgba(46, 125, 50, 0.8);
+    --radius: 16px;
+    --sombra: 0 8px 20px rgba(0, 0, 0, 0.25);
+    --fuente: "Poppins", sans-serif;
+    }
+
+    /* Fondo general */
+    body {
+    font-family: var(--fuente);
+    color: var(--texto-claro);
+    margin: 0;
+    background: url("https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?_gl=1*smo64i*_ga*MTcyMTk1MDA2My4xNzYwNjYyMjQx*_ga_8JE65Q40S6*czE3NjA4NDM1NzkkbzIkZzEkdDE3NjA4NDM4MjkkajU5JGwwJGgw") center/cover no-repeat fixed;
+    background-attachment: fixed;
+    }
+
+    /* Encabezado */
+    header {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    border-radius: 0 0 20px 20px;
+    box-shadow: var(--sombra);
+    }
+
+    header h1 {
+    color: var(--verde-principal);
+    font-size: 2.2rem;
+    }
+
+    header p {
+    color: #2e4635;
+    font-size: 1.1rem;
+    }
+
+    /* Contenedor principal */
+    .calculadoras-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Mantiene las 3 horizontalmente */
+    gap: 2rem;
+    padding: 2rem;
+    overflow-x: auto;
+    }
+
+    /* Tarjetas individuales */
+    .calculator {
+    background: var(--fondo-transparente);
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    padding: 1.8rem;
+    width: 300px;
+    min-width: 280px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .calculator:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Textos */
+    h2 {
+    color: #e8f5e9;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 0.4rem;
+    }
+
+    /* Formularios */
+    label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-align: left;
+    }
+
+    input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border: none;
+    border-radius: var(--radius);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #2e7d32;
+    font-weight: 500;
+    outline: none;
+    transition: background 0.3s;
+    }
+
+    input:focus, select:focus {
+    background-color: #ffffff;
+    }
+
+    /* Botones */
+    button {
+    background-color: #1b5e20;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    width: 100%;
+    }
+
+    button:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+    }
+
+    /* Resultados */
+    p {
+    margin-top: 1rem;
+    font-weight: bold;
+    background: rgba(255,255,255,0.15);
+    border-radius: var(--radius);
+    padding: 0.6rem;
+    }
+
+    /* Pie de página */
+    footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: rgba(255,255,255,0.8);
+    color: #1b5e20;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    box-shadow: var(--sombra);
+    }
