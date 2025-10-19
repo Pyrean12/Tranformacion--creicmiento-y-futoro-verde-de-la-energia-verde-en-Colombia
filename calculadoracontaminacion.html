@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Huella de CO₂</title>
+    <link rel="stylesheet" href="stylecal.css">
+    </head>
+    <body>
+    <header>
+        <h1>🌍 Calculadora de Huella de CO₂</h1>
+        <p class="lead">Calcula tu huella de carbono de forma simple y ecológica.</p>
+    </header>
+
+    <main>
+        <div class="calculadoras-container">
+        
+        <section class="calculator">
+            <h2>🚗 Transporte</h2>
+            <form id="transportecalculadora">
+            <label for="medio">Modo de transporte:</label>
+            <select id="medio" required>
+                <option value="carro">Carro</option>
+                <option value="bus">Bus</option>
+                <option value="metro">Metro</option>
+                <option value="moto">Motocicleta</option>
+                <option value="bibicleta">Bicicleta / A pie</option>
+            </select>
+
+            <label for="distancia">Distancia recorrida (km):</label>
+            <input type="number" id="distancia" placeholder="Ej: 50" min="0" required>
+
+            <label for="viajes">Número de viajes por semana:</label>
+            <input type="number" id="viajes" placeholder="Ej: 5" min="0" required>
+
+            <label for="pasajeros">Número de pasajeros:</label>
+            <input type="number" id="pasajeros" placeholder="Ej: 1" min="1" value="1">
+            </form>
+            
+            
+            <button type="button" id="calcularb">Calcular CO₂</button>
+            <p id="resultadoTransporte"></p>
+            </section>
+        </section>
+
+        <section class="calculator" id="alimentacion">
+        <h2>🥗 Alimentación</h2>
+        <p>Cuéntanos sobre tus hábitos alimenticios 🍎</p>
+
+        <label for="frecuenciaCarne">¿Con qué frecuencia comes carne roja?</label>
+        <select id="frecuenciaCarne">
+            <option value="0">Nunca</option>
+            <option value="1">1-2 veces por semana</option>
+            <option value="2">3-5 veces por semana</option>
+            <option value="3">Todos los días</option>
+        </select>
+
+        <label for="productosLocales">¿Sueles consumir productos locales?</label>
+        <select id="productosLocales">
+            <option value="1">Siempre que puedo</option>
+            <option value="2">A veces</option>
+            <option value="3">Casi nunca</option>
+        </select>
+
+        <label for="desperdicio">¿Qué tanto desperdicias comida?</label>
+        <select id="desperdicio">
+            <option value="1">Muy poco o nada</option>
+            <option value="2">A veces</option>
+            <option value="3">Bastante</option>
+        </select>
+
+        <button onclick="calcularAlimentacion()">Calcular mi huella 🍃</button>
+        <p id="resultadoAlimentacion"></p>
+        </section>
+
+        <section class="calculator" id="energia">
+        <h2>💡 Energía en el Hogar</h2>
+        <p>Cuéntanos sobre el uso de energía en tu casa ⚡</p>
+
+        <label for="electrodomesticos">¿Qué tanto usas electrodomésticos (televisor, nevera, lavadora, etc.)?</label>
+        <select id="electrodomesticos">
+            <option value="1">Muy poco</option>
+            <option value="2">Uso moderado</option>
+            <option value="3">Bastante uso</option>
+        </select>
+
+        <label for="bombillos">¿Tienes bombillos LED o de bajo consumo?</label>
+        <select id="bombillos">
+            <option value="1">Sí, la mayoría</option>
+            <option value="2">Algunos</option>
+            <option value="3">Ninguno</option>
+        </select>
+
+        <label for="tipoEnergia">¿Sabes de dónde proviene principalmente la energía en tu zona?</label>
+        <select id="tipoEnergia">
+            <option value="renovable">Principalmente renovable (solar, eólica, hidroeléctrica)</option>
+            <option value="mixta">Mixta (hidroeléctrica y térmica)</option>
+            <option value="no_renovable">Principalmente no renovable (térmica o diésel)</option>
+        </select>
+
+        <button onclick="calcularEnergia()">Calcular mi huella ⚡</button>
+        <p id="resultadoEnergia"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Datos de referencia: Agencia Europea del Medioambiente (2023).  
+        <br>“Cada kilómetro cuenta para un planeta más limpio.”</p>
+    </footer>
+
+    <script src="calculadoraco2.js"></script>
+    </body>
+    </html>
