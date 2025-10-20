@@ -23,7 +23,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #c8a951 !important; /* Dorado suave */
+    color: #c8a951;
     transform: scale(1.05);
 }
 
@@ -31,7 +31,6 @@
     border-color: #f0e6b2;
 }
 
-/* Efecto de sombra inferior */
 .navbar {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
