@@ -8,7 +8,37 @@
     --fuente: "Poppins", sans-serif;
     }
 
-    /* Fondo general */
+        .bg-verde {
+        background-color: rgba(46, 125, 50, 0.8);
+    }
+
+    .navbar-brand {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: #f0e6b2;
+        letter-spacing: 1px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #f0e6b2 ;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #c8a951;
+        transform: scale(1.05);
+    }
+
+    .navbar-toggler {
+        border-color: #f0e6b2;
+    }
+
+    .navbar {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    
     body {
     font-family: var(--fuente);
     color: var(--texto-claro);
@@ -17,7 +47,7 @@
     background-attachment: fixed;
     }
 
-    /* Encabezado */
+   
     header {
     text-align: center;
     padding: 1.5rem;
@@ -37,18 +67,17 @@
     font-size: 1.1rem;
     }
 
-    /* Contenedor principal */
     .calculadoras-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap; /* Mantiene las 3 horizontalmente */
+    flex-wrap: nowrap; 
     gap: 2rem;
     padding: 2rem;
     overflow-x: auto;
     }
 
-    /* Tarjetas individuales */
+   
     .calculator {
     background: var(--fondo-transparente);
     border-radius: var(--radius);
@@ -66,7 +95,7 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
     }
 
-    /* Textos */
+
     h2 {
     color: #e8f5e9;
     margin-bottom: 1rem;
@@ -75,7 +104,7 @@
     padding-bottom: 0.4rem;
     }
 
-    /* Formularios */
+   
     label {
     display: block;
     margin-top: 1rem;
@@ -100,7 +129,6 @@
     background-color: #ffffff;
     }
 
-    /* Botones */
     button {
     background-color: #1b5e20;
     color: #fff;
@@ -119,7 +147,6 @@
     transform: scale(1.05);
     }
 
-    /* Resultados */
     p {
     margin-top: 1rem;
     font-weight: bold;
@@ -128,7 +155,6 @@
     padding: 0.6rem;
     }
 
-    /* Pie de página */
     footer {
     text-align: center;
     padding: 1.2rem;
