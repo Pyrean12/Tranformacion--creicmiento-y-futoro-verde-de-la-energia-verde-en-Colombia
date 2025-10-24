@@ -5,142 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Región Pacifico e Insular</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="regionpacifico.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-pacifico navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">EcoRegiones</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Regiones
-                        </a>
-                         <ul class="dropdown-menu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Regiones</a>
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="regionamazonia.html">Amazonia</a></li>
                             <li><a class="dropdown-item" href="regionAndina.html">Andina</a></li>
                             <li><a class="dropdown-item" href="regioncaribe.html">Caribe</a></li>
                             <li><a class="dropdown-item" href="regionPacificaeInsular.html">Insular</a></li>
-                            <li><a class="dropdown-item" href="regionPacificaeInsular.html">Paficica</a></li>
+                            <li><a class="dropdown-item" href="regionPacificaeInsular.html">Pacífica</a></li>
                             <li><a class="dropdown-item" href="regionorinoquia.html">Orinoquia</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true"></a>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
-    <header>
-        <h1>Región Pacifico e Insular</h1>
+
+        <header id="header">
+        <h1 id="regionpacifico">Region Pacifica e Insular</h1>
     </header>
-    <main>
-        <img src="https://i.pinimg.com/1200x/ec/cc/f7/ecccf7cc87338d7f8ea12a8e80f56418.jpg" alt="Pacifico Colombiano">
-        <hr>
-        <section>
-            <div class="container">
-                <p>En el Pacífico continental hay avances focalizados en soluciones para Zonas No Interconectadas (ZNI): proyectos piloto y microredes híbridas solar–diésel con baterías están en ejecución para pasar comunidades de pocas horas de servicio a suministro más continuo (ej. proyecto FENOGE/MinEnergía para comunidades del Pacífico). Paralelamente existen proyectos comunitarios en fase de despliegue en puntos como Bahía Málaga (Buenaventura) que combinan fotovoltaica distribuida con generadores de respaldo.
-                En la región insular (San Andrés, Providencia y Santa Catalina) hay programas de transición energética orientados a reducir dependencia de diésel (programa “Be Energy”, apoyo BID/FENOGE) e iniciativas piloto de eficiencia y microgeneración (solar, proyectos híbridos y propuestas de eólica/waste-to-energy en etapas de planeación). En resumen: implementación práctica y piloto (microredes y híbridos) ya en marcha, pero la escala masiva aún es limitada y avanza por proyectos por comunidad/proyecto.
-                </p>
+    <section class="carousel-section">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner" justify-content:center>
+                    <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/1200x/ec/cc/f7/ecccf7cc87338d7f8ea12a8e80f56418.jpg" class="d-block w-100" alt="Orinoquia1" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1715559501246-ffe8df3a8a5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" class="d-block w-100" alt="Orinoquia2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/1148860674/es/foto/isla-de-san-andr%C3%A9s-colombia.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZiZ0KuEXE86TUiJjTuYi6fG3b0Qx2josh6gqng_pEO8=" class="d-block w-100" alt="Orinoquia3">
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-                <ul>
-                    <h4>Solar fotovoltaica (microgrids y paneles distribuidos)</h4>
-                    <li>
-                        <p> Es la principal tecnología en ZNI del Pacífico (comunidades rurales, caseríos) y en San Andrés como alternativa al diésel; proyectos para instalar paneles y microredes en Bahía Málaga y en islas para disminuir costos y subsidios.                            
-                        </p>
-                    </li>
-                </ul>
-
-                <ul>
-                    <h4>Híbridos solar-diésel con baterías</h4>
-                    <li>
-                        <p>Ampliamente usados como modalidad para aumentar horas de servicio en comunidades del Pacífico (proyectos FENOGE/MinEnergía).
-                        </p>
-                    </li>
-                </ul>
-
-                <ul>
-                    <h4>Biomasa y biogás (uso limitado)</h4>
-                    <li>
-                        <p>Uso en zonas con actividad agroindustrial; en islas se han evaluado alternativas de aprovechamiento de residuos (casos puntuales y propuestas).
-                        </p>
-                    </li>
-                </ul>
-
-                <ul>
-                    <h4>Energía mareomotriz e hidrocinética (fase de investigación / pre-factibilidad)</h4>
-                    <li>
-                        <p>Estudios identifican puntos con buen potencial en la costa Pacífica — especialmente Bahía Málaga y sectores de Buenaventura — pero están en fase de estudio o pilotos, no masiva
-                        </p>
-                    </li>
-                </ul>
-        </section>
-        <section>
-            <p>El desarrollo de energías renovables en el Pacífico e insular colombiano enfrenta múltiples obstáculos derivados de su aislamiento geográfico, la falta de infraestructura eléctrica interconectada y las dificultades logísticas para transportar equipos y mantener sistemas en zonas rurales o costeras. A ello se suman limitaciones financieras y la escasa capacidad técnica local para operar y sostener proyectos de generación limpia. Además, los conflictos sociales y ambientales influyen de manera significativa: las comunidades afrodescendientes e indígenas demandan participación y consulta previa en los proyectos energéticos, y la falta de diálogo efectivo ha retrasado o detenido varias iniciativas. En algunos casos, la percepción de exclusión o el temor a impactos sobre ecosistemas sensibles —como manglares, arrecifes o áreas protegidas— genera resistencia comunitaria, lo que evidencia la necesidad de enfoques participativos y sostenibles que integren los derechos territoriales y la protección ambiental con la transición energética.
-            </p>
-            
-            <h4>¿Cómo ha evolucionado la inversión en renovables en el Pacífico e insular (1965–2025)?</h4>
-        <hr>
-            <p>Desde 1965 hasta comienzos del siglo XXI, la inversión energética en el Pacífico colombiano y en la región insular (San Andrés, Providencia y Santa Catalina) estuvo concentrada casi exclusivamente en infraestructura básica de generación diésel. Durante este periodo, las políticas energéticas nacionales priorizaron la expansión de grandes proyectos hidroeléctricos en la región andina y del interior, dejando rezagadas las zonas costeras y apartadas, conocidas hoy como Zonas No Interconectadas (ZNI). En consecuencia, comunidades del Chocó, Nariño, Cauca y el archipiélago insular dependieron históricamente de plantas diésel pequeñas y costosas, con subsidios estatales para cubrir los altos costos de operación. Entre 2000 y 2015, comenzó a crecer el interés institucional por diversificar la matriz energética y mejorar la eficiencia en las regiones aisladas. Aunque la inversión seguía siendo baja, se impulsaron proyectos piloto de energía solar y biomasa en el marco de programas como IPSE (Instituto de Planificación y Promoción de Soluciones Energéticas) y UPME, orientados a evaluar la viabilidad técnica de energías limpias en comunidades rurales. En la región insular, se realizaron diagnósticos energéticos y programas de eficiencia liderados por la CRA y CORALINA, enfocados en reducir la dependencia del diésel y sus impactos ambientales. A partir de 2016, con la promulgación de la Ley 1715 de 2014 (que promueve el uso de fuentes no convencionales de energía), se observa un incremento sostenido en la inversión pública y de cooperación internacional hacia las regiones del Pacífico e insular. Organismos como el Banco Interamericano de Desarrollo (BID), la Agencia Española de Cooperación Internacional (AECID) y el Fondo de Energías No Convencionales y Gestión Eficiente de la Energía (FENOGE) financiaron proyectos de microredes híbridas solar–diésel con baterías, paneles solares distribuidos y capacitación comunitaria. Ejemplos notables incluyen el Programa de Energización Rural del Pacífico (PERP), con proyectos en Bahía Málaga, Guapi y Nuquí, y las iniciativas de transición energética en San Andrés y Providencia, como el proyecto “Be Energy” y la Estrategia de Carbono Neutro para el archipiélago. Estas inversiones, aunque de menor escala en comparación con megaproyectos eólicos o solares del Caribe, han sido determinantes para mejorar la calidad del servicio eléctrico, reducir emisiones y promover autonomía energética local. Entre 2020 y 2025, las inversiones se han enfocado en consolidar la transición energética justa y fortalecer la infraestructura de almacenamiento y redes inteligentes. FENOGE y MinEnergía han priorizado recursos para expandir los sistemas híbridos, incorporar baterías de litio y desarrollar microredes comunitarias en territorios étnicos del Pacífico. En la región insular, se promueven alianzas público-privadas para instalar techos solares en edificaciones públicas y sustituir progresivamente el uso de diésel en generación. En resumen, la inversión en energías renovables en el Pacífico e insular colombiano ha pasado de ser prácticamente inexistente en el siglo XX a convertirse en una política estratégica de electrificación sostenible en el siglo XXI. Si bien aún enfrenta retos financieros, técnicos y sociales, el ritmo de crecimiento en la última década refleja un cambio estructural hacia un modelo más limpio, descentralizado y participativo.
-            </p>
-            Se han envidensiado mejoras en servicio eléctrico (más horas/día), reducción de dependencias de diésel, ahorro en costos operativos locales, y beneficios de salud por menor uso de combustibles sólidos cuando los programas se integran con otras intervenciones (ej. estufas). Además, proyectos generan empleo local durante instalación. Sin embargo, si no se continua una buena gestión, pueden afectar ecosistemas costeros/manglares o generar tensiones por distribución desigual de beneficios. En conjunto: los proyectos piloto han mostrado co-beneficios sociales y ambientales cuando incorporan participación comunitaria y mantenimiento local.
-        </section>
-
-        <section>
-        <h4>Estrategias para fortalecer la implementación de energías renovables en el Pacífico e Insular colombiano (2025–2035)</h4>
-            <p>Desarrollo de proyectos a escala comunitaria (microgrids y modelos locales de energía)
-            Impulsar sistemas solares fotovoltaicos comunitarios y microredes híbridas (solar–diésel–baterías) adaptadas a las necesidades y capacidades locales. Estos proyectos deben ser replicables y sostenibles, con participación directa de las comunidades en su administración y mantenimiento. La experiencia del proyecto piloto de Bahía Málaga demuestra que cuando la comunidad se involucra desde la planeación, se incrementa la sostenibilidad social y técnica.
-
-
-            Ampliación del financiamiento combinado (blended finance) y cooperación internacional
-            Fomentar alianzas entre el Estado, cooperación internacional y sector privado para compartir riesgos y reducir costos iniciales de inversión. El uso de fondos mixtos, como los gestionados por el Banco Interamericano de Desarrollo (BID) y FENOGE, puede garantizar la continuidad de proyectos en zonas de difícil acceso. Además, deben crearse líneas de crédito verde y mecanismos de subsidio por resultados para comunidades rurales y étnicas.
-
-
-            Fortalecimiento de la gobernanza local y los procesos de consulta previa
-            Aumentar la participación de comunidades afrodescendientes e indígenas en el diseño y ejecución de proyectos. Esto implica procesos de consulta previa efectivos, acuerdos de beneficio compartido y mecanismos de propiedad comunitaria sobre la infraestructura energética. Un enfoque de gobernanza participativa reduce conflictos, fortalece la aceptación social y garantiza el respeto por los derechos territoriales.
-
-            Investigación aplicada y pilotos para energías marinas e hidrocinéticas
-            Promover proyectos piloto de energía mareomotriz e hidrocinética en áreas con alto potencial, como Bahía Málaga y Buenaventura, realizando estudios de impacto ambiental (EIA) rigurosos antes de escalar. Estos ensayos deben ejecutarse con apoyo de universidades, MinCiencias y centros tecnológicos, priorizando soluciones de bajo impacto ambiental y alta eficiencia.
-
-            Capacitación técnica, mantenimiento y logística regional
-            Crear centros de soporte regional en puntos estratégicos como Buenaventura y Tumaco, enfocados en la formación técnica local, mantenimiento preventivo y gestión de repuestos. Fortalecer las capacidades locales garantiza la autonomía operativa, reduce costos de reparación y prolonga la vida útil de los equipos instalados.
-
-
-            Integración de energías renovables con estrategias de desarrollo sostenible y turismo ecológico
-            En el caso de la región insular, se deben vincular los proyectos energéticos con actividades productivas sostenibles, como el ecoturismo, la pesca responsable y la gestión de residuos. Esto permite que la energía limpia se convierta en un motor de desarrollo económico, generando empleo y reduciendo la huella de carbono del sector turístico.
-
-
-            Fortalecimiento institucional y marco regulatorio diferenciado para ZNI
-            Actualizar las normas y procedimientos que rigen la generación en zonas no interconectadas, de modo que se simplifiquen trámites, se ajusten incentivos fiscales y se creen tarifas sostenibles para proyectos comunitarios. Un marco regulatorio flexible puede acelerar la expansión de energías limpias sin comprometer la calidad del servicio ni la sostenibilidad financiera.
-            </p>
-        </section>
-
-        <section>
-            <h4>¿Qué rol podrían tener las renovables en la reducción de emisiones de GEI en el Pacífico e islas?</h4>
-            <p>Las renovables pueden reemplazar combustibles diésel y leña (fuentes intensivas en carbono y contaminantes) en ZNI y en las islas; por tanto, su expansión local reducirá emisiones directas del sector energía local y mejorará salud pública. Además, la electrificación de transporte en islas y la estabilidad de suministro permitirían mayor penetración de soluciones bajas en carbono. El impacto total dependerá de la escala de despliegue: proyectos actuales (microredes/híbridos) generan reducciones locales relevantes, y un escalamiento estratégico podría consolidar reducciones medibles a nivel departamental/regional. 
-            </p> 
-</section>
-    </main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        </div>
+    </section>
+    <main>
+        <h2 id="titulomain">Region Pacifica</h2>
+        <img id="mapa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMorrNw8TKQOqUYvVpygbpPV9H6KAG7ep8Og&s" alt="region amazonica mapa">
+        <p id="introduccion">
+                En el Pacífico continental hay avances focalizados en soluciones para Zonas No Interconectadas (ZNI): proyectos piloto y microredes híbridas solar–diésel con baterías están en ejecución para pasar comunidades de pocas horas de servicio a suministro más continuo (ej. proyecto FENOGE/MinEnergía para comunidades del Pacífico). Paralelamente existen proyectos comunitarios en fase de despliegue en puntos como Bahía Málaga (Buenaventura) que combinan fotovoltaica distribuida con generadores de respaldo.
+                En la región insular (San Andrés, Providencia y Santa Catalina) hay programas de transición energética orientados a reducir dependencia de diésel (programa “Be Energy”, apoyo BID/FENOGE) e iniciativas piloto de eficiencia y microgeneración (solar, proyectos híbridos y propuestas de eólica/waste-to-energy en etapas de planeación). En resumen: implementación práctica y piloto (microredes y híbridos) ya en marcha, pero la escala masiva aún es limitada y avanza por proyectos por comunidad/proyecto.      
+        </p>
+        <section class="acordeon">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Tipos de Energia
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        Solar fotovoltaica (microgrids y paneles distribuidos):
+                        Es la principal tecnología en ZNI del Pacífico (comunidades rurales, caseríos) y en San Andrés como alternativa al diésel; proyectos para instalar paneles y microredes en Bahía Málaga y en islas para disminuir costos y subsidios.                            
+                        Híbridos solar-diésel con baterías: Ampliamente usados como modalidad para aumentar horas de servicio en comunidades del Pacífico (proyectos FENOGE/MinEnergía).
+                        Biomasa y biogás (uso limitado): Uso en zonas con actividad agroindustrial; en islas se han evaluado alternativas de aprovechamiento de residuos (casos puntuales y propuestas).
+                        Energía mareomotriz e hidrocinética (fase de investigación / pre-factibilidad): Estudios identifican puntos con buen potencial en la costa Pacífica — especialmente Bahía Málaga y sectores de Buenaventura — pero están en fase de estudio o pilotos, no masiva.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Cómo ha evolucionado la inversión en renovables en el Pacífico e insular (1965–2025)?
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <p>
+                Desde 1965 hasta comienzos del siglo XXI, la región Pacífica e Insular dependió casi exclusivamente de plantas diésel costosas y subsidiadas, debido a la baja inversión en energías limpias y la prioridad nacional por grandes hidroeléctricas del interior. A partir del 2000 surgieron proyectos piloto de energía solar y biomasa impulsados por entidades como IPSE y UPME, y tras la Ley 1715 de 2014 aumentó la inversión pública e internacional, destacando programas como el PERP en Bahía Málaga, Guapi y Nuquí, y el proyecto “Be Energy” en San Andrés y Providencia. Estas iniciativas permitieron diversificar la matriz energética, mejorar la calidad del servicio, reducir emisiones y fortalecer la autonomía local. Entre 2020 y 2025, la inversión se ha enfocado en expandir sistemas híbridos, baterías de litio y microredes comunitarias, junto con alianzas público-privadas para reemplazar progresivamente el diésel. Aunque persisten desafíos técnicos, financieros y ambientales, los proyectos han generado empleo, reducido costos y mejorado la salud comunitaria, consolidando un avance significativo hacia un modelo energético más limpio, descentralizado y participativo.                
+                </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Estrategias para fortalecer la implementación de energías renovables en el Pacífico e Insular colombiano (2025–2035)
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                    Se propone fortalecer el uso de energías renovables en la región Pacífica e Insular mediante proyectos comunitarios que incluyan sistemas solares e híbridos administrados localmente, fomentando la sostenibilidad social y técnica como lo demuestra la experiencia de Bahía Málaga. También se plantea ampliar el financiamiento combinado a través de alianzas entre el Estado, la cooperación internacional y el sector privado, implementando créditos verdes y subsidios para comunidades rurales y étnicas. Es fundamental garantizar la participación activa de comunidades afrodescendientes e indígenas mediante procesos de consulta previa, acuerdos de beneficio compartido y modelos de propiedad comunitaria. Además, se recomienda promover proyectos piloto de energía mareomotriz e hidrocinética en zonas como Buenaventura, con estudios ambientales rigurosos y apoyo de instituciones académicas. La creación de centros de capacitación técnica en puntos estratégicos como Tumaco permitirá fortalecer las capacidades locales y garantizar la sostenibilidad operativa. En las islas, la energía limpia debe vincularse con el ecoturismo, la pesca responsable y la gestión de residuos para impulsar un desarrollo económico sostenible. Finalmente, se requiere actualizar el marco regulatorio para las zonas no interconectadas, simplificando trámites, ajustando incentivos y estableciendo tarifas sostenibles para los proyectos comunitarios.                    
+                </p>
+                </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                    ¿Qué rol podrían tener las renovables en la reducción de emisiones de GEI en el Pacífico e islas?
+                </button>
+                </h2>
+                <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                    Las renovables pueden reemplazar combustibles diésel y leña (fuentes intensivas en carbono y contaminantes) en ZNI y en las islas; por tanto, su expansión local reducirá emisiones directas del sector energía local y mejorará salud pública. Además, la electrificación de transporte en islas y la estabilidad de suministro permitirían mayor penetración de soluciones bajas en carbono. El impacto total dependerá de la escala de despliegue: proyectos actuales (microredes/híbridos) generan reducciones locales relevantes, y un escalamiento estratégico podría consolidar reducciones medibles a nivel departamental/regional. 
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section>
+        <h3>¿Quieres ser parte del cambio?</h3>
+        <a href="cotizacionEnergiasLimpiaz.html">
+        <button>Cotizar</button>
+        </a>
+    </section>
+    <section class="calculadoracontaminacion">
+        <h3>Calcula tu huella de carbono</h3>
+        <h4>Descubre cuanto CO2 generas con tus habitos diarios</h4>
+        <a href="calculadoracontaminacion.html">
+        <button >Calcular</button>
+        </a>
+    </section>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
-
-
