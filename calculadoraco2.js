@@ -24,15 +24,15 @@
 
         let resultadoElemento = document.getElementById('resultadoTransporte');
         resultadoElemento.style.display = 'block';
-        resultadoElemento.innerHTML = `🌿 Tu huella de transporte estimada es de <strong>${resultado} kg CO₂e/semana</strong>.`;
+        resultadoElemento.innerHTML = ` Tu huella de transporte estimada es de <strong>${resultado} kg CO₂e/semana</strong>.`;
         
         let mensaje = "";
         if (co2 < 5) {
-            mensaje = "🚲 ¡Excelente! Tu huella de carbono es muy baja. Sigue usando medios sostenibles. 💚";
+            mensaje = " ¡Excelente! Tu huella de carbono es muy baja. Sigue usando medios sostenibles. ";
         } else if (co2 < 20) {
-            mensaje = "🚗 Tu huella de carbono es moderada. Intenta combinar transporte público o compartir vehículo. 🌎";
+            mensaje = " Tu huella de carbono es moderada. Intenta combinar transporte público o compartir vehículo. ";
         } else {
-            mensaje = "✈️ Tu huella de carbono es alta. Considera alternativas más ecológicas. ¡Cada kilómetro cuenta! 🌍";
+            mensaje = " Tu huella de carbono es alta. Considera alternativas más ecológicas. ¡Cada kilómetro cuenta! ";
         }
 
         resultadoElemento.innerHTML += `<br>${mensaje}`;
@@ -65,14 +65,14 @@
     }
 
     document.getElementById("resultadoAlimentacion").innerHTML =
-        `🌍 Tu huella alimentaria estimada es de <strong>${totalCO2.toFixed(2)} kg de CO₂ al mes</strong>.`;
+        ` Tu huella alimentaria estimada es de <strong>${totalCO2.toFixed(2)} kg de CO₂ al mes</strong>.`;
 
     if (totalCO2 < 40) {
-        document.getElementById("resultadoAlimentacion").innerHTML += " ¡Excelente! Tu alimentación es bastante sostenible. 🌿";
+        document.getElementById("resultadoAlimentacion").innerHTML += " ¡Excelente! Tu alimentación es bastante sostenible. ";
     } else if (totalCO2 < 80) {
-        document.getElementById("resultadoAlimentacion").innerHTML += " Vas por buen camino, podrías mejorar reduciendo el desperdicio o consumiendo comida local. 💪";
+        document.getElementById("resultadoAlimentacion").innerHTML += " Vas por buen camino, podrías mejorar reduciendo el desperdicio o consumiendo comida local. ";
     } else {
-        document.getElementById("resultadoAlimentacion").innerHTML += " Considera reducir la carne o el desperdicio de comida para ayudar al planeta. 🌎";
+        document.getElementById("resultadoAlimentacion").innerHTML += " Considera reducir la carne o el desperdicio de comida para ayudar al planeta. ";
     }
     }
 
@@ -98,13 +98,13 @@
     let totalCO2 = co2;
 
     document.getElementById("resultadoEnergia").innerHTML =
-        `🔋 Tu huella energética estimada es de <strong>${totalCO2.toFixed(2)} kg de CO₂ al mes</strong>.`;
+        ` Tu huella energética estimada es de <strong>${totalCO2.toFixed(2)} kg de CO₂ al mes</strong>.`;
 
     if (totalCO2 < 30) {
-        document.getElementById("resultadoEnergia").innerHTML += " ¡Excelente! Tu consumo energético es muy eficiente. 🌿";
+        document.getElementById("resultadoEnergia").innerHTML += " ¡Excelente! Tu consumo energético es muy eficiente. ";
     } else if (totalCO2 < 60) {
-        document.getElementById("resultadoEnergia").innerHTML += " Estás en un nivel aceptable, podrías mejorar usando más bombillos LED y desconectando aparatos. 💡";
+        document.getElementById("resultadoEnergia").innerHTML += " Estás en un nivel aceptable, podrías mejorar usando más bombillos LED y desconectando aparatos. ";
     } else {
-        document.getElementById("resultadoEnergia").innerHTML += " Tu huella energética es alta. Considera reducir el uso de electrodomésticos o cambiar a energía más limpia. 🌎";
+        document.getElementById("resultadoEnergia").innerHTML += " Tu huella energética es alta. Considera reducir el uso de electrodomésticos o cambiar a energía más limpia. ";
     }
     }
