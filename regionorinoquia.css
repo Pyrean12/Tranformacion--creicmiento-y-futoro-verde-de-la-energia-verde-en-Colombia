@@ -1,0 +1,220 @@
+    :root {
+    --primary-color: #d4a54f;      
+    --secondary-color: #8b4513;    
+    --vanilla-color: #fff2cc;      
+    --accent-color: #f4b942;   
+    }    
+
+    .bg-llano {
+        background-color: var(--secondary-color);
+    }
+
+    .navbar-brand {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: var(--vanilla-color);
+        letter-spacing: 1px;
+    }
+
+    .navbar-nav .nav-link {
+        color: var(--vanilla-color);
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: var(--accent-color);
+        transform: scale(1.05);
+    }
+
+    .navbar-toggler {
+        border-color: var(--vanilla-color);
+    }
+
+    .navbar {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    body {
+    background-image: url("https://images.unsplash.com/photo-1422466654108-5e533f591881?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    }
+
+    #header {
+    background-color: rgba(139, 69, 19, 0.85);
+    padding: 1.2rem;
+    text-align: center;
+    color: var(--vanilla-color);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px #000;
+    }
+
+    /* Carrusel */
+    .carousel-section {
+    position: relative;
+    margin-bottom: 3rem;
+    }
+
+    #carouselExample {
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    .carousel-inner {
+    height: 600px;
+    }
+
+    .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    #carouselExample .carousel-caption {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    text-align: left;
+    color: #fff;
+    }
+
+    #carouselExample .carousel-caption h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #000;
+    }
+
+    #titulomain {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--vanilla-color);
+    text-shadow: 1px 1px 6px #000;
+    }
+
+    #mapa {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    #introduccion {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.6;
+    }
+
+    .acordeon {
+    width: 85%;
+    margin: 50px auto;
+    }
+
+    .accordion-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(6px);
+    }
+
+    .accordion-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    }
+
+    .accordion-button:not(.collapsed) {
+    background-color: var(--secondary-color);
+    color: var(--vanilla-color);
+    }
+
+    .accordion-body {
+    color: #000000;
+    line-height: 1.7;
+    }
+
+    /* Sección destacada (naturaleza del llano) */
+    section:nth-of-type(3) {
+        background: linear-gradient(135deg, #d4a54f 0%, #8b4513 100%);
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        border-radius: 20px;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 800px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    section:nth-of-type(3) h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    section:nth-of-type(3) button {
+        background-color: var(--vanilla-color);
+        color: var(--secondary-color);
+        border: none;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    section:nth-of-type(3) button:hover {
+        background-color: var(--accent-color);
+        color: #fff;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    section:last-of-type {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(139, 69, 19, 0.9);
+    color: var(--vanilla-color);
+    }
+
+    button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+
+    button:hover {
+    background-color: var(--vanilla-color);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    }
+
+
+
+
+
